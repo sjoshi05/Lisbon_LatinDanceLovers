@@ -1,0 +1,38 @@
+:root {
+  --black: rgb(1, 0, 0);
+  --off-white: rgb(225, 211, 202);
+  --white: rgb(232, 235, 236);
+  --teal: rgb(53, 184, 179);
+}
+
+html {
+  height: 100%;
+}
+
+.homepage-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 85vh 15vh;
+}
+
+.homepage-hero {
+  background-image: linear-gradient(rgba(1, 0, 0, 0.5), rgba(1, 0, 0, 0.5)),
+    url("/images/couple_dancing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  line-height: 85vh;
+  text-align: center;
+  filter: brightness(3px);
+}
+
+h1 {
+  color: var(--off-white);
+  display: inline-block;
+  font-size: 35px;
+  line-height: normal;
+  padding: 10px;
+  vertical-align: center;
+  -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
+}
