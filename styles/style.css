@@ -7,24 +7,11 @@
 
 html {
   height: 100%;
+  width: 100%;
 }
 
-.homepage-grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 85vh 15vh;
-}
-
-.homepage-hero {
-  background-image: linear-gradient(rgba(1, 0, 0, 0.5), rgba(1, 0, 0, 0.5)),
-    url("/images/couple_dancing.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  line-height: 85vh;
-  text-align: center;
-  filter: brightness(3px);
+body {
+  background: var(--black);
 }
 
 h1 {
@@ -35,4 +22,83 @@ h1 {
   padding: 10px;
   vertical-align: center;
   -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
+}
+
+h2 {
+  color: var(--black);
+  font-size: 35px;
+  margin: 3px 0px;
+  -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
+}
+p {
+  color: var(--black);
+  font-size: 22px;
+  margin: 0px;
+}
+
+.navbar-grid-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  background: var(--black);
+
+  width: 100%;
+}
+
+.navbar-grid {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.navbar-grid-item {
+  align-items: center;
+  background: var(--off-white);
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
+  text-align: center;
+}
+.navlink {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.icon {
+  padding-right: 5px;
+}
+
+.homepage-hero {
+  background-image: linear-gradient(rgba(1, 0, 0, 0.5), rgba(1, 0, 0, 0.5)),
+    url("/images/couple_dancing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  line-height: 100vh;
+  text-align: center;
+  filter: brightness(3px);
+}
+
+.aboutContent {
+  background: var(--off-white);
+  padding: 10px;
+}
+
+.about-pic {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 3px;
+  width: 100%;
 }

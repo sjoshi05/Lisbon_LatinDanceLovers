@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c1b86d4588.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Lisbon for Latin Dance Lovers</title>
     <meta
       name="description"
@@ -13,20 +17,61 @@
   </head>
   <body>
     <div class="container">
-      <section class="homepage-grid-container">
-        <div class="homepage-hero grid-item">
-          <h1>
-            Lisbon<br />
-            <small>for</small> <br />
-            Latin Dance Lovers
-          </h1>
+      <div class="homepage-hero">
+        <h1>
+          Lisbon<br />
+          <small>for</small> <br />
+          Latin Dance Lovers
+        </h1>
+      </div>
+      <div class="about-container">
+        <img
+          src="/images/about_heading_pic.jpg"
+          alt="hanging lights in studio"
+          class="about-pic"
+        />
+        <div class="aboutContent" id="aboutSection">
+          <h2>About</h2>
+          <p>
+            Lisbon is a lively city full of dance opportunities for those who
+            love latin dances like salsa and bachata. This website gathers
+            information on classes and parties so you can spend less time
+            looking and more time grooving.
+          </p>
         </div>
-        <div class="grid-item">
-          <footer>
-            <h2>hello world</h2>
-          </footer>
-        </div>
-      </section>
+      </div>
+      <div class="navbar-grid-container">
+        <nav>
+          <div class="navbar-grid">
+            <div class="navbar-grid-item">
+              <a href="#aboutSection" class="navlink">
+                <span class="icon"
+                  ><i
+                    class="fa-solid fa-circle-info"
+                    style="color: var(--black)"
+                  >
+                  </i>
+                </span>
+                About
+              </a>
+            </div>
+            <div class="navbar-grid-item">
+              <a href="#classesSection" class="navlink">
+                <span class="icon"><i class="fa-solid fa-school"></i></span>
+                Classes</a
+              >
+            </div>
+            <div class="navbar-grid-item">
+              <a href="#partiesSection" class="navlink">
+                <span class="icon">
+                  <i class="fa-solid fa-champagne-glasses"></i
+                ></span>
+                Parties</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
   </body>
 </html>
