@@ -3,6 +3,7 @@
   --off-white: rgb(225, 211, 202);
   --white: rgb(232, 235, 236);
   --teal: rgb(53, 184, 179);
+  --dark-teal: rgb(46, 158, 154);
 }
 
 html {
@@ -16,6 +17,11 @@ html {
 
 body {
   background: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  margin-bottom: 500px;
 }
 
 h1 {
@@ -32,6 +38,18 @@ h2 {
   font-size: 35px;
   margin: 3px 0px;
   -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
+}
+
+h3 {
+  color: var(--black);
+  font-size: 25px;
+  margin: 3px 0px;
+}
+
+h4 {
+  color: var(--black);
+  font-size: 22px;
+  margin: 15px 0px 3px 0px;
 }
 p {
   color: var(--black);
@@ -117,7 +135,6 @@ nav {
 .classesContent {
   background: var(--off-white);
   padding: 10px;
-  height: 100vh;
 }
 
 .classes-pic {
@@ -130,6 +147,65 @@ nav {
   filter: grayscale(25%);
 }
 
+.classes-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  margin: 15px auto;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.card-header {
+  max-width: 300px;
+}
+
+.card-header img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 15px 10px 10px;
+}
+
+.studio-locations {
+  font-size: 22px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.studio-map {
+  border-radius: 4px;
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+}
+
+.studio-link {
+  background: var(--teal);
+  border: 1px solid var(--dark-teal);
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: var(--black);
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 15px 15px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.udance-logo {
+  background: var(--teal);
+}
 .partiesContent {
   background: var(--off-white);
   padding: 10px;
