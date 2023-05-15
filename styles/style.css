@@ -147,6 +147,11 @@ nav {
   filter: grayscale(25%);
 }
 
+.classes-grid-wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+
 .classes-grid {
   display: grid;
   gap: 10px;
@@ -209,7 +214,6 @@ nav {
 .partiesContent {
   background: var(--off-white);
   padding: 10px;
-  height: 100vh;
 }
 
 .parties-pic {
@@ -219,4 +223,47 @@ nav {
   margin-top: 3px;
   height: 30vh;
   width: 100vw;
+}
+
+@media (max-width: 650px) {
+  table {
+    background: var(--white);
+    border-radius: 0px 0px 4px 4px;
+  }
+  caption {
+    background: var(--dark-teal);
+    border-bottom: 3px groove var(--off-white);
+    border-radius: 4px 4px 0px 0px;
+    color: var(--white);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+  }
+
+  td:first-child {
+    margin-top: 10px;
+  }
+
+  td:last-child {
+    border-bottom: 2px groove var(--teal);
+    padding-bottom: 10px;
+  }
+
+  td::before {
+    content: attr(data-cell) ": ";
+    font-weight: bold;
+    text-transform: capitalize;
+  }
 }
