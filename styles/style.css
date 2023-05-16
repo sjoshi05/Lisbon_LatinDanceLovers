@@ -23,6 +23,11 @@ body {
 section {
   margin-bottom: 500px;
 }
+main {
+  margin-bottom: 60px;
+  overflow-y: scroll;
+  scroll-snap-type: initial;
+}
 
 h1 {
   color: var(--off-white);
@@ -57,10 +62,9 @@ p {
   margin: 0px;
 }
 
-main {
-  margin-bottom: 60px;
-  overflow-y: scroll;
-  scroll-snap-type: initial;
+.favicon {
+  vertical-align: sub;
+  width: 16px;
 }
 
 .navbar-grid-container {
@@ -79,8 +83,10 @@ nav {
 .navbar-grid {
   column-gap: 3px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat (2, 1fr);
   padding: 10px;
+  row-gap: 0px;
 }
 
 .navbar-grid-item {
@@ -93,12 +99,35 @@ nav {
   padding: 25px 15px;
   text-align: center;
 }
+
+.grid-col-span-3 {
+  grid-column: span 3;
+}
+
 .navlink {
   color: var(--black);
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   margin: 0 auto;
+}
+
+.navbar-homelink-wrapper {
+  border-top: 1px groove var(--off-white);
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.navbar-homelink {
+  color: var(--off-white);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar-favicon {
+  width: 20px;
+  vertical-align: text-top;
 }
 
 .icon {
@@ -113,7 +142,7 @@ nav {
   background-repeat: no-repeat;
   display: block;
   line-height: 100vh;
-  text-align: center;
+  text-align: left;
   filter: brightness(3px);
 }
 
