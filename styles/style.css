@@ -74,11 +74,13 @@ p {
 }
 .large-navbar-grid-container nav {
   background: var(--off-white);
-  border-bottom: 1px groove var(--black);
+  border: 4px groove var(--black);
+  border-radius: 10px;
+  margin: 5px;
   padding: 10px 5px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 97%;
 }
 
 .large-navbar-grid {
@@ -351,7 +353,7 @@ p {
     display: inline-block;
     font-size: clamp(35px, 5vw, 96px);
     line-height: normal;
-    padding-left: 22%;
+    padding-left: 5%;
     padding-top: 5%;
     -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
   }
@@ -368,6 +370,7 @@ p {
     background-repeat: no-repeat;
     display: block;
     line-height: 100vh;
+    margin: 0 20%;
     filter: brightness(3px);
     text-align: left;
   }
