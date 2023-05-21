@@ -32,7 +32,7 @@ main {
 h1 {
   color: var(--off-white);
   display: inline-block;
-  font-size: 35px;
+  font-size: clamp(35px, 3vw, 96px);
   line-height: normal;
   padding: 10px;
   -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
@@ -67,20 +67,64 @@ p {
   width: 16px;
 }
 
-.navbar-grid-container {
+.large-navbar-grid-container {
   display: flex;
   justify-content: center;
   margin: 0px;
 }
-nav {
+.large-navbar-grid-container nav {
+  background: var(--off-white);
+  border-bottom: 1px groove var(--black);
+  padding: 10px 5px;
   position: fixed;
-  bottom: 0;
-  background: var(--black);
-
+  top: 0;
   width: 100%;
 }
 
-.navbar-grid {
+.large-navbar-grid {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: 70fr 10fr 10fr 10fr;
+}
+
+.navbar-grid-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.navlink {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.navlink:hover {
+  font-weight: bold;
+}
+
+.large-navbar-favicon {
+  padding-left: 1vw;
+  width: 22px;
+  vertical-align: text-top;
+}
+
+.mobile-navbar-grid-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+.mobile-navbar-grid-container nav {
+  position: fixed;
+  bottom: 0;
+  background: var(--black);
+  width: 100%;
+}
+
+.mobile-navbar-grid {
   column-gap: 3px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -89,7 +133,7 @@ nav {
   row-gap: 0px;
 }
 
-.navbar-grid-item {
+.mobile-navbar-grid-item {
   align-items: center;
   background: var(--off-white);
   border: 1px solid var(--black);
@@ -104,7 +148,7 @@ nav {
   grid-column: span 3;
 }
 
-.navlink {
+.mobile-navlink {
   color: var(--black);
   font-size: 16px;
   font-weight: bold;
@@ -112,20 +156,20 @@ nav {
   margin: 0 auto;
 }
 
-.navbar-homelink-wrapper {
+.mobile-navbar-homelink-wrapper {
   border-top: 1px groove var(--off-white);
   margin-top: 10px;
   padding: 5px;
   text-align: center;
 }
 
-.navbar-homelink {
+.mobile-navbar-homelink {
   color: var(--off-white);
   font-size: 18px;
   text-decoration: none;
 }
 
-.navbar-favicon {
+.mobile-navbar-favicon {
   width: 20px;
   vertical-align: text-top;
 }
@@ -254,7 +298,11 @@ nav {
   width: 100vw;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
+  .large-devices {
+    display: none;
+  }
+
   table {
     background: var(--white);
     border-radius: 0px 0px 4px 4px;
@@ -294,5 +342,37 @@ nav {
     content: attr(data-cell) ": ";
     font-weight: bold;
     text-transform: capitalize;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    color: var(--off-white);
+    display: inline-block;
+    font-size: clamp(35px, 5vw, 96px);
+    line-height: normal;
+    padding-left: 22%;
+    padding-top: 5%;
+    -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
+  }
+
+  .homepage-hero {
+    background: linear-gradient(
+        left to right,
+        rgba(1, 0, 0, 0.5),
+        rgba(1, 0, 0, 0.5)
+      ),
+      url("/images/couple_dancing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    line-height: 100vh;
+    filter: brightness(3px);
+    text-align: left;
+  }
+
+  .small-devices {
+    display: none;
   }
 }
