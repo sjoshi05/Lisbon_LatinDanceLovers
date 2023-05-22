@@ -200,7 +200,7 @@ p {
   height: 100vh;
 }
 
-.about-pic {
+.mobile-about-pic {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,6 +307,14 @@ p {
     display: none;
   }
 
+  .about-grid {
+    display: inline-block;
+  }
+
+  .large-about-pic {
+    display: none;
+  }
+
   table {
     background: var(--white);
     border-radius: 0px 0px 4px 4px;
@@ -378,6 +386,41 @@ p {
   }
 
   .small-devices {
+    display: none;
+  }
+
+  .about-container {
+    display: flex;
+  }
+
+  .about-grid {
+    background: var(--off-white);
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 2fr;
+    line-height: 1.5;
+    padding: 70px 100px;
+    justify-items: right;
+  }
+
+  .polaroid-frame {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .large-about-pic-caption {
+    font-style: italic;
+    line-height: 2;
+  }
+
+  .large-about-pic {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30vw;
+  }
+  .mobile-about-pic {
     display: none;
   }
 }
