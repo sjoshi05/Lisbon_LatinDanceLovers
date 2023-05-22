@@ -59,6 +59,7 @@ h4 {
 p {
   color: var(--black);
   font-size: 22px;
+  line-height: 1.5;
   margin: 0px;
 }
 
@@ -74,15 +75,11 @@ p {
 }
 .large-navbar-grid-container nav {
   background: var(--black);
-  border: 1px groove var(--off-white);
-  border-bottom: 2px groove var(--off-white);
-  border-right: 2px groove var(--off-white);
-  border-radius: 10px;
-  margin: 5px;
+  border: 1px solid var(--off-white);
   padding: 10px 5px;
   position: fixed;
   top: 0;
-  width: 97%;
+  width: 100%;
 }
 
 .large-navbar-grid {
@@ -186,10 +183,8 @@ p {
   background-image: linear-gradient(rgba(1, 0, 0, 0.5), rgba(1, 0, 0, 0.5)),
     url("/images/couple_dancing.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  display: block;
-  line-height: 100vh;
   text-align: left;
   filter: brightness(3px);
 }
@@ -307,6 +302,10 @@ p {
     display: none;
   }
 
+  .homepage-hero {
+    line-height: 100vh;
+  }
+
   .about-grid {
     display: inline-block;
   }
@@ -358,14 +357,27 @@ p {
 }
 
 @media (min-width: 768px) {
+  body {
+    margin: 0px;
+  }
   h1 {
     color: var(--off-white);
-    display: inline-block;
+    display: block;
     font-size: clamp(35px, 5vw, 96px);
     line-height: normal;
-    padding-left: 5%;
-    padding-top: 5%;
+    margin-bottom: 40px;
+    padding-left: 20%;
     -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
+  }
+
+  h2,
+  p {
+    color: var(--black);
+  }
+
+  header,
+  section {
+    margin-bottom: 0px;
   }
 
   .homepage-hero {
@@ -376,15 +388,25 @@ p {
       ),
       url("/images/couple_dancing.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 50% 35%;
     background-repeat: no-repeat;
-    display: block;
-    line-height: 100vh;
-    margin: 3% 15% 0%;
     filter: brightness(3px);
+    padding-top: 100px;
+    padding-bottom: 400px;
     text-align: left;
   }
 
+  .homepage-learnmore-link {
+    background: var(--off-white);
+    border: 1 solid var(--black);
+    border-radius: 4px;
+    color: var(--black);
+    font-weight: bold;
+    margin-left: 20%;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+  }
   .small-devices {
     display: none;
   }
@@ -393,8 +415,13 @@ p {
     display: flex;
   }
 
+  .aboutContent {
+    background: var(--black);
+    padding: 10px;
+    height: auto;
+  }
+
   .about-grid {
-    background: var(--off-white);
     display: grid;
     gap: 25px;
     grid-template-columns: 1fr 2fr;
@@ -403,6 +430,10 @@ p {
     justify-items: right;
   }
 
+  .about-grid-item-two h2,
+  .about-grid-item-two p {
+    color: var(--off-white);
+  }
   .polaroid-frame {
     background: var(--white);
     border-radius: 4px;
@@ -422,5 +453,91 @@ p {
   }
   .mobile-about-pic {
     display: none;
+  }
+
+  .classes-pic {
+    display: none;
+  }
+
+  .classesContent {
+    background-image: linear-gradient(rgba(1, 0, 0, 0.8), rgba(1, 0, 0, 0.8)),
+      url(/images/dance_class.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+  }
+  .classesHeader {
+    backdrop-filter: blur(5px);
+    padding: 3px;
+  }
+  .classesContent h2 {
+    color: var(--off-white);
+    text-align: center;
+  }
+
+  .classesContent p {
+    color: var(--off-white);
+    margin: 15px 5px;
+  }
+
+  .classes-grid {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px auto;
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    width: 320px;
+  }
+
+  .card-header {
+    max-width: 320px;
+  }
+
+  .card-header img {
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 25px 20px 20px;
+  }
+
+  .card-body p {
+    color: var(--black);
+  }
+
+  .studio-locations {
+    font-size: 22px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .studio-map {
+    border-radius: 4px;
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+  }
+
+  .studio-link {
+    background: var(--teal);
+    border: 1px solid var(--dark-teal);
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: var(--black);
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 15px 15px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
   }
 }
