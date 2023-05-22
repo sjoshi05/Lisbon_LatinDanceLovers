@@ -63,6 +63,12 @@ p {
   margin: 0px;
 }
 
+footer h3,
+footer p {
+  color: var(--teal);
+  font-size: 16px;
+}
+
 .favicon {
   vertical-align: sub;
   width: 16px;
@@ -286,6 +292,7 @@ p {
 .partiesContent {
   background: var(--off-white);
   padding: 10px;
+  margin-bottom: 0px;
 }
 
 .parties-pic {
@@ -354,6 +361,24 @@ p {
     font-weight: bold;
     text-transform: capitalize;
   }
+}
+
+footer {
+  background: var(--black);
+  border-top: 1px groove var(--teal);
+}
+.footer-grid-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0px;
+}
+.footer-grid-item {
+  padding: 25px;
 }
 
 @media (min-width: 768px) {
@@ -543,7 +568,7 @@ p {
 
   .parties {
     background: var(--black);
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
   }
   .parties-pic {
     display: none;
