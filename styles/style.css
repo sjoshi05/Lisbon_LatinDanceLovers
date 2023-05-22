@@ -540,4 +540,69 @@ p {
     text-align: center;
     text-decoration: none;
   }
+
+  .parties {
+    background: var(--black);
+    padding: 5%;
+  }
+  .parties-pic {
+    display: none;
+  }
+
+  .partiesContent {
+    background: var(--black);
+  }
+
+  .partiesContent h2 {
+    color: var(--off-white);
+    text-align: center;
+  }
+
+  .partiesContent p {
+    color: var(--off-white);
+    margin: 15px 5px;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  caption {
+    display: none;
+  }
+
+  th {
+    background: var(--dark-teal);
+    border-bottom: 3px groove var(--black);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  th:nth-child(1) {
+    border-radius: 10px 0px 0px 0px;
+  }
+  th:nth-child(6) {
+    border-radius: 0px 10px 0px 0px;
+  }
+
+  td {
+    font-size: 20px;
+    margin-bottom: 3px;
+    padding: 10px 15px;
+    text-align: left;
+  }
+  tr:nth-child(1n) {
+    background: rgba(225, 211, 202, 1);
+  }
+  tr:nth-child(2n) {
+    background: rgba(225, 211, 202, 0.9);
+  }
+
+  .bottom-left-tbody {
+    border-radius: 0px 0px 0px 10px;
+  }
+  .bottom-right-tbody {
+    border-radius: 0px 0px 10px 0px;
+  }
 }
