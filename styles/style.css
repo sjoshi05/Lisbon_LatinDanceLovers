@@ -73,8 +73,10 @@ p {
   margin: 0px;
 }
 .large-navbar-grid-container nav {
-  background: var(--off-white);
-  border: 4px groove var(--black);
+  background: var(--black);
+  border: 1px groove var(--off-white);
+  border-bottom: 2px groove var(--off-white);
+  border-right: 2px groove var(--off-white);
   border-radius: 10px;
   margin: 5px;
   padding: 10px 5px;
@@ -97,7 +99,7 @@ p {
 }
 
 .navlink {
-  color: var(--black);
+  color: var(--off-white);
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
@@ -105,7 +107,7 @@ p {
 }
 
 .navlink:hover {
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 .large-navbar-favicon {
@@ -370,7 +372,7 @@ p {
     background-repeat: no-repeat;
     display: block;
     line-height: 100vh;
-    margin: 0 20%;
+    margin: 3% 15% 0%;
     filter: brightness(3px);
     text-align: left;
   }
