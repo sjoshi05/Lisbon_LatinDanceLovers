@@ -136,7 +136,7 @@ footer p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat (2, 1fr);
-  padding: 10px;
+  padding: 5px;
   row-gap: 0px;
 }
 
@@ -147,7 +147,7 @@ footer p {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 25px 15px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -157,7 +157,7 @@ footer p {
 
 .mobile-navlink {
   color: var(--black);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   margin: 0 auto;
@@ -172,17 +172,18 @@ footer p {
 
 .mobile-navbar-homelink {
   color: var(--off-white);
-  font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
 }
 
 .mobile-navbar-favicon {
-  width: 20px;
+  width: 16px;
   vertical-align: text-top;
 }
 
 .icon {
-  padding-right: 5px;
+  font-size: 22px;
+  justify-content: center;
 }
 
 .homepage-hero {
@@ -388,71 +389,6 @@ footer {
 
   .footer-grid-wrapper {
     display: none;
-  }
-  .mobile-navbar-grid-container {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-  }
-  .mobile-navbar-grid-container nav {
-    position: fixed;
-    bottom: 0;
-    background: var(--black);
-    width: 100%;
-  }
-
-  .mobile-navbar-grid {
-    column-gap: 3px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat (2, 1fr);
-    padding: 10px;
-    row-gap: 0px;
-  }
-
-  .mobile-navbar-grid-item {
-    align-items: center;
-    background: var(--off-white);
-    border: 1px solid var(--black);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 15px;
-    text-align: center;
-  }
-
-  .grid-col-span-3 {
-    grid-column: span 3;
-  }
-
-  .mobile-navlink {
-    color: var(--black);
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 auto;
-  }
-
-  .mobile-navbar-homelink-wrapper {
-    border-top: 1px groove var(--off-white);
-    margin-top: 10px;
-    padding: 5px;
-    text-align: center;
-  }
-
-  .mobile-navbar-homelink {
-    color: var(--off-white);
-    font-size: 18px;
-    text-decoration: none;
-  }
-
-  .mobile-navbar-favicon {
-    width: 20px;
-    vertical-align: text-top;
-  }
-
-  .icon {
-    padding-right: 5px;
   }
 }
 
