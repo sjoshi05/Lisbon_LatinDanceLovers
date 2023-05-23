@@ -343,6 +343,11 @@ footer {
     background: var(--white);
     border-radius: 0px 0px 4px 4px;
   }
+
+  table col {
+    width: 100%;
+  }
+
   caption {
     background: var(--dark-teal);
     border-bottom: 3px groove var(--off-white);
