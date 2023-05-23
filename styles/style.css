@@ -251,6 +251,7 @@ footer p {
 .card-header img {
   border-radius: 4px;
   width: 100%;
+  height: 164px;
 }
 
 .card-body {
@@ -601,6 +602,7 @@ footer {
   .card-header img {
     border-radius: 4px;
     width: 100%;
+    height: 164px;
   }
 
   .card-body {
