@@ -27,12 +27,23 @@ main {
 }
 
 h1 {
-  color: var(--off-white);
+  color: var(--teal);
   display: inline-block;
-  font-size: clamp(35px, 3vw, 96px);
   line-height: normal;
   padding: 10px;
+}
+
+.h1-line1 {
+  font-size: clamp(38px, 3vw, 96px);
   -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
+}
+
+.h1-line2 {
+  display: inline-block;
+  font-family: "Sansita Swashed", cursive;
+  font-size: clamp(47px, 4vw, 96px);
+  font-style: italic;
+  font-weight: 400;
 }
 
 h2 {
@@ -395,33 +406,35 @@ footer {
   }
   h1 {
     color: var(--off-white);
-    display: block;
-    font-size: clamp(35px, 5vw, 96px);
     line-height: normal;
-    margin-bottom: 40px;
-    padding-left: 20%;
     -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
+    padding: 80px 15px 15px 60px;
+    background: var(--dark-teal);
+    border-radius: 0px 3px 3px 0;
   }
 
   h2,
   p {
     color: var(--black);
   }
+  .homepage-hero-grid-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
 
-  .homepage-hero {
-    background: linear-gradient(
-        left to right,
-        rgba(1, 0, 0, 0.5),
-        rgba(1, 0, 0, 0.5)
-      ),
-      url("/images/couple_dancing.jpg");
-    background-size: cover;
-    background-position: 50% 35%;
+  .homepage-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: url("/images/couple_dancing.jpg");
+    padding: 330px 0 150px;
+    background-position: 50% 32%;
+  }
+
+  .homepage-hero-pic img {
     background-repeat: no-repeat;
     filter: brightness(3px);
-    padding-top: 100px;
-    padding-bottom: 400px;
-    text-align: left;
+    aspect-ratio: 4/6;
+    height: 100vh;
   }
 
   .homepage-learnmore-link {
@@ -430,7 +443,7 @@ footer {
     border-radius: 4px;
     color: var(--black);
     font-weight: bold;
-    margin-left: 20%;
+    margin-left: 80px;
     padding: 10px 15px;
     text-decoration: none;
     text-align: center;
