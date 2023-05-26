@@ -579,7 +579,6 @@ footer {
   .h1-line1 {
     font-size: clamp(38px, 5vw, 96px);
     -webkit-text-stroke: 1px rgba(1, 0, 0, 0.6);
-    backdrop-filter: blur(100%);
   }
 
   .h1-line2 {
