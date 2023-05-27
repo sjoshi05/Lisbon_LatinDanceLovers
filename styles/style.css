@@ -207,7 +207,6 @@ footer p {
 .aboutContent {
   background: var(--off-white);
   padding: 10px;
-  height: 100vh;
 }
 
 .mobile-about-pic {
@@ -344,9 +343,13 @@ footer {
     -webkit-text-stroke: 1px rgba(1, 0, 0, 0.4);
   }
 
-  h2,
+  h2 {
+    color: var(--black);
+    font-size: clamp(30px, 32px, 35px);
+  }
   p {
     color: var(--black);
+    font-size: clamp(18px, 20px, 22px);
   }
   .homepage-hero-grid-wrapper {
     width: 100%;
@@ -390,9 +393,22 @@ footer {
     display: none;
   }
 
+  .aboutContent {
+    padding: 5px 20px 15px 15px;
+  }
+
+  .classesContent {
+    padding: 5px 20px 15px 15px;
+  }
+
+  .partiesContent {
+    padding: 5px 20px 15px 15px;
+  }
+
   table {
     background: var(--white);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 45px;
   }
 
   table col {
@@ -416,7 +432,7 @@ footer {
   }
   td {
     display: block;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 3px;
     padding-left: 10px;
   }
@@ -512,9 +528,22 @@ footer {
     display: none;
   }
 
+  .aboutContent {
+    padding: 5px 20px 15px 15px;
+  }
+
+  .classesContent {
+    padding: 5px 20px 15px 15px;
+  }
+
+  .partiesContent {
+    padding: 5px 20px 15px 15px;
+  }
+
   table {
     background: var(--white);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 45px;
   }
 
   table col {
@@ -644,9 +673,22 @@ footer {
     display: none;
   }
 
+  .aboutContent {
+    padding: 5px 20px 15px 15px;
+  }
+
+  .classesContent {
+    padding: 5px 20px 15px 15px;
+  }
+
+  .partiesContent {
+    padding: 5px 20px 15px 15px;
+  }
+
   table {
     background: var(--white);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 45px;
   }
 
   table col {
