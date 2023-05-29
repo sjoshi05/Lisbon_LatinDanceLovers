@@ -12,6 +12,7 @@ html {
   ::-webkit-scrollbar {
     display: none;
   }
+  scroll-behavior: smooth;
   scrollbar-width: none;
 }
 
